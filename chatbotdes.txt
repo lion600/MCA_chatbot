@@ -1,0 +1,5 @@
+This project is basically based on a NLP based Chatbot for PES University.Any user who wants basic information about PES University can use it for getting quicker responses.
+
+Download the files.
+
+Run app.ipynp to check the project and start the chatbot.

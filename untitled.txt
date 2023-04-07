@@ -1,0 +1,9 @@
+query="SELECT SOL from solutions where TagId = (SELECT TagId from qustions where Qus=%s"
+
+qu=question, // let question is quetion
+
+cursor.execute(query,qu)
+
+result = cursor.fetchall()
+
+

@@ -1,0 +1,774 @@
+{"intents": [
+    {"tag":"greeting",
+         "patterns":["hi","how are you","Is anyone there?","Hello","good day","whats up"],
+         "responses":["hello","good to see you again!","Hi there,how can I help?"],
+         "context_set": ""
+
+        },
+        {"tag": "goodbye",
+         "patterns":["cya","see you later","goodbye","bye","I am leaving","Have a good day"],
+         "responses":["sad to see you go","Talk to you later","goodbye!"],
+         "context_set": ""
+        },
+        
+        {"tag": "name",
+         "patterns": ["what is your name","what should I call you","whats your name?","who are you"],
+         "responses":["you can call me PES bot. I can give you all the information about PES university ","I'm PES bot! I can give you all the information about PES university.","I'm PES bot. I can give you all the information about PES university"],
+         "context_set": ""
+        },
+     {"tag": "pro chancellor",
+        "patterns": ["about Prof. Jawahar Doreswamy","who is Prof. Jawahar Doreswamy", "who is the pro chancellor of PES University?","about pro chancellor of PES University","tell me something about pro chancellor of PES University"],
+        "responses":["Prof. Jawahar Doreswamy ,Pro Chancellor, PES University and Adviser to the Government of Karnataka(Education Reforms)<br /><img src='https://pes.edu/wp-content/uploads/2018/08/PROF.-JAWAHAR-DORESWAMY-960X960-1-600x600.jpg' style='width:300px;height:250px;'/>"],
+        "context_set": ""
+        },
+    {"tag": " chancellor",
+        "patterns": ["about DR.Dr. M R Doreswamy","who is Dr. M R Doreswamy", "who is the chancellor of PES University?","about chancellor of PES University","tell me something about chancellor of PES University"],
+        "responses":["Dr. M R Doreswamy Founder Secretary, PES Education Society;Chancellor, PES University and Adviser to the Government of Karnataka(Education Reforms)<br /><img src='https://pes.edu/wp-content/uploads/2018/08/DR.-M-R-DORESWAMY-960X960-1-600x600.jpg' style='width:300px;height:250px;'/>"],
+        "context_set": ""
+        },
+       
+        {"tag": "vice chancellor",
+        "patterns": ["about DR. SURYAPRASAD J","who is Dr. SURYAPRASAD J", "who is the vice chancellor of PES University?", "who is DR. SURYAPRASAD J","about vice chancellor of PES University","tell me something about vice chancellor of PES University"],
+        "responses":["DR. SURYAPRASAD J,VICE-CHANCELLOR<br /><img src='https://pes.edu/wp-content/uploads/2018/08/DR-SURYAPRASAD-J-400X400.jpg'/>"],
+        "context_set": ""
+        },
+    {"tag": "Registrar",
+        "patterns": ["about DR. K S SRIDHAR","who is DR. K S SRIDHAR", "who is the Registrar?","about registrar of PES University","tell me something about Registrar of PES University"],
+        "responses":["DR. K S SRIDHAR,Registrar & Professor, P E S University, Bangalore, 2020-Till date,<br /><img src='https://staff.pes.edu/assets/uploads/faculty/20210524074233000758.jpg' style='width:300px;height:250px;'/>"],
+        "context_set": ""
+        },
+    {"tag": "COO",
+        "patterns": ["about Prof. Ajoy Kumar","who is Prof. Ajoy Kumar", "who is the COO?","who is Chief Operating Officer?","about COO of PES University","tell me something about Chief Operating Officer of PES University"],
+        "responses":[" Prof. Ajoy Kumar,COO OF PES University, Bangalore,<br /><img src='https://pes.edu/wp-content/uploads/2018/08/PROF.-AJOY-KUMAR-960X960-v1-600x600.jpg' style='width:300px;height:250px;'/>"],
+        "context_set": ""
+        },
+        {"tag": "campus",
+         "patterns":["tell me something about PES University campus","how is life at PES University campus","about PES campus","campus life at PES Bangalore"],
+         "responses":["PES University, is located in Bangalore.The campus is spread over 110 acres of land and encompasses student hostels, cafeteria, library, multiple auditoriums and sports grounds. It is a Wi-Fi smart campus, with internet facility in the hostels as well."],
+         "context_set": ""
+        },
+        {"tag": "food",
+         "patterns": ["what type of food we can find in university", "name all the food shops in this campus","which food shop is the most liked by the students"],
+         "responses":["At PES university you will find all variety of food as here in PES students from all over the states of India and also the International students come here to pursue there higher studies, So thats why PES takes care of all students.You can go to canteem behind MBA Block or Canteen near BE Block.<br /><img src='https://im.rediff.com/getahead/2020/sep/29burnt-garlic-chilli-maggi.jpg?w=670&h=900'  style='width:300px;height:250px;'/>"],
+         "context_set": ""
+         },
+     {
+                        "tag": "Btech_fees",
+                        "patterns": [
+                                "Tell me about fee of Btech?",
+                                "what is the fees for B Tech?",
+                                "fee of btech ?",
+                            "b tech fees"
+                        ],
+                        "responses": [
+                                "PESSAT Fee/JEE Mains Fee –INR 4,00,00 to INR 4,50,000 / Annum(depends which category you choose)"
+                        ],
+                        "context_set": ""
+                },
+    {
+                        "tag": "MCA_fees",
+                        "patterns": [
+                                "Tell me about fee of MCA?",
+                                "what is the fees for MCA?",
+                                "fee of MCA ?",
+                            "MCA fees"
+                        ],
+                        "responses": [
+                                "PESSAT Fee – INR 2,50,000 / Annum .For more detail visit <a target=\"_blank\" href=\"https://pes.edu/pesu-fee-details/\"> here</a>"
+                        ],
+                        "context_set": ""
+                },
+    {
+                        "tag": "Master of Technology (MTech)_fees",
+                        "patterns": [
+                                "Tell me about fee of M.Tech?",
+                                "what is the fees for M.Tech?",
+                                "fee of m tech ?",
+                            "M. tech fees",
+                            "m tech fees?"
+                        ],
+                        "responses": [
+                                "PESSAT Fee – INR 2,50,000 / Annum .For more detail visit <a target=\"_blank\" href=\"https://pes.edu/pesu-fee-details/\"> here</a>"
+                        ],
+                        "context_set": ""
+                },
+      {
+                        "tag": "MBA_fees",
+                        "patterns": [
+                                "Tell me about fee of MBA?",
+                                "what is the fees for MBA?",
+                                "fee of mba ?",
+                            "MBA fees",
+                            "mba fees?"
+                        ],
+                        "responses": [
+                                "PESSAT Fee – INR 7,00,000 / Annum .For more detail visit <a target=\"_blank\" href=\"https://pes.edu/pesu-fee-details/\"> here</a>"
+                        ],
+                        "context_set": ""
+                },
+    {
+                        "tag": "BCA_fees",
+                        "patterns": [
+                                "Tell me about fee of BCA?",
+                                "what is the fees for BCA?",
+                                "fee of bca ?",
+                            "BCA fees",
+                            "bca fees?"
+                        ],
+                        "responses": [
+                                "PESSAT Fee – INR 2,00,000 / Annum .For more detail visit <a target=\"_blank\" href=\"https://pes.edu/pesu-fee-details/\"> here</a>"
+                        ],
+                        "context_set": ""
+                },
+     {
+                        "tag": "Bachelor of Architecture (B.Arch)_fees",
+                        "patterns": [
+                                "Tell me about fee of B.Arch?",
+                                "what is the fees for B arch?",
+                                "fee of b arch ?",
+                            "B Arch fees",
+                            "b arch fees?"
+                        ],
+                        "responses": [
+                                "PESSAT Fee – INR 3,60,000 / Annum .For more detail visit <a target=\"_blank\" href=\"https://pes.edu/pesu-fee-details/\"> here</a>"
+                        ],
+                        "context_set": ""
+                },
+     {
+                        "tag": "BBA_fees",
+                        "patterns": [
+                                "Tell me about fee of BBA?",
+                                "what is the fees for BBA?",
+                                "fee of bba ?",
+                            "BBA fees",
+                            "bba fees?"
+                        ],
+                        "responses": [
+                                "PESSAT Fee – INR 2,20,000 / Annum .For more detail visit <a target=\"_blank\" href=\"https://pes.edu/pesu-fee-details/\"> here</a>"
+                        ],
+                        "context_set": ""
+                },
+    {
+                        "tag": "Research Programs_fees",
+                        "patterns": [
+                                "Tell me about fee of PhD?",
+                                "what is the fees for PhD?",
+                                "fee of Research Programs ?",
+                            "phd fees",
+                            "PhD fees?"
+                        ],
+                        "responses": [
+                                "Fee for Doctor of Philosophy (Ph. D) – INR 1,00,000 / Annum.Fee for Research Programs – INR 1,00,000 / Annum.For more detail visit <a target=\"_blank\" href=\"https://pes.edu/pesu-fee-details/\"> here</a>"
+                        ],
+                        "context_set": ""
+                },
+        {"tag": "hours",
+         "patterns": ["timing of college","what is college timing","working days","when are you guys open","what are your hours","hours of operation","when is the college open","college timing","what about college timing",
+                                "is college open on saturday",
+                                "tell something about college timing",
+                                "what is the college  hours",
+                                "when should i come to college",
+                                "when should i attend college",
+                                "what is my college time",
+                                "college timing",
+                                "timing college"
+                        ],
+                        "responses": [
+                                "College is open 9am-5pm Monday-Friday!"
+                        ],
+                        "context_set": ""
+                },
+     {
+                        "tag": "location",
+                        "patterns": [
+                                "where is the college located",
+                                "college is located at",
+                                "where is college",
+                                "where is college located",
+                                "address of college",
+                                "how to reach college",
+                                "college location",
+                                "college address",
+                                "wheres the college",
+                                "how can I reach college",
+                                "address of PES university",
+                                "give me the address of PES university",
+                                "whats is the college address",
+                                "what is the address of college",
+                                "address",
+                                "location"
+                        ],
+                        "responses": [
+                                "100 Feet Ring Road,BSK III Stage,Bangalore-560085 <a target=\"_blank\"href=\"https://goo.gl/maps/pzhNGWeHxkHhqSKeA\"> here</a> "
+                        ],
+                        "context_set": ""
+                },
+               { "tag": "number",
+                 "patterns": [
+
+                                "more info",
+                                "contact info",
+                                "how to contact college",
+                                "college telephone number",
+                                "college number",
+                                "What is your contact no",
+                                "Contact number?",
+                                "how to call you",
+                                "College phone no?",
+                                "how can i contact you",
+                                "Can i get your phone number",
+                                "how can i call you",
+                                "phone number",
+                                "phone no",
+                                "call"
+                        ],
+                        "responses": [
+                                "You can contact at ++91 80 26721983,+91 80 26722108"
+                        ],
+                        "context_set": ""
+                },
+              {
+                "tag": "fees",
+                "patterns": [
+                                "information about fee",
+                                "information on fee",
+                                "tell me the fee",
+                                "college fee",
+                                "fee per semester",
+                                "what is the fee of each semester",
+                                "what is the fees of each year",
+                                "what is fee",
+                                "what is the fees",
+                                "how much is the fees",
+                                "fees",
+                                "about the fees",
+                                "tell me something about the fees"
+                        ],
+                        "responses": [
+                                "For Fee detail visit <a target=\"_blank\" href=\"https://pes.edu/pesu-fee-details/\"> here</a>"
+                        ],
+                        "context_set": ""
+                },
+    
+        {"tag": "Canteen_location",
+         "patterns": ["where we can find food court", "please tell me location of food court", "guide me the way to food court" ,"food court location", "help me to reach food court","can you tell me canteen locations","Where is canteen located"],
+         "responses": ["you can find food court behind MBA Block,for small snacks you can go to Canteen near BE Block <a target=\"_blank\" href=\"https://goo.gl/maps/mdFVJgyZ7jPoLEZE6\">here</a>"] ,
+         "context_set": ""
+        },
+     {
+                        "tag": "hostel",
+                        "patterns": [
+                                "hostel facility",
+                                "hostel servive",
+                                "hostel location",
+                                "hostel address",
+                                "hostel facilities",
+                                "hostel fees",
+                                "Does college provide hostel",
+                                "Is there any hostel",
+                                "Where is hostel",
+                                "do you have hostel",
+                                "do you guys have hostel",
+                                "hostel"
+                                
+                        ],
+                        "responses": [
+                                "PES has Boys hostel facities inside the campus and girls hostel outside the campus.For more detail visit <a target=\"_blank\" href=\"https://pes.edu/hostel-admission/\"> here</a>"
+                        ],
+                        "context_set": ""
+                },
+     {
+                        "tag": "library",
+                        "patterns": [
+                                "is there any library",
+                                "library facility",
+                                "library facilities",
+                                "do you have library",
+                                "does the college have library facility",
+                                "college library",
+                                
+                                "book facility",
+                              
+                                "Library",
+                                "Tell me about library",
+                                "how many libraries"
+                        ],
+                        "responses": [
+                                "PES has total 3 library.The PES University Library strives to support and enhance the learning, teaching, research, and service activities by providing organized access to quality information. The information is facilitated in different media like books required for courses, periodicals, comprehensive databases that are accessible through internet."
+                        ],
+                        "context_set": ""
+                },
+     {
+                        "tag": "library_location",
+                        "patterns": [
+                                "Give me location of library",
+                                "How to reach Library",
+                                "Where can I get books?",
+                            "where is library?"
+                                
+                            
+                        ],
+                        "responses": [
+                                "Central Library.2nd floor of MRD Block <a target=\"_blank\" href=\"https://goo.gl/maps/Mks7Yg6ZieS94EdX7\"> here</a>"
+                        ],
+                        "context_set": ""
+                },
+     {
+                        "tag": "MRD_location",
+                        "patterns": [
+                                "Give me location of MRD",
+                                "How to reach MRD Block?",
+                                "Where is MRD Block",
+                            "I want to go MRD building"
+                                
+                            
+                        ],
+                        "responses": [
+                                "Go streight from the main gate.The first right building is MRD Block <a target=\"_blank\" href=\"https://goo.gl/maps/Mks7Yg6ZieS94EdX7\"> here</a>"
+                        ],
+                        "context_set": ""
+                },
+     {
+                        "tag": "MCA_Department_location",
+                        "patterns": [
+                                "Give me location of MCA Department",
+                                "How to reach MCA Department",
+                                "location of MCA Department?",
+                                "I want to go MCA Department?"
+                            
+                        ],
+                        "responses": [
+                                "MCA Department is in Basement of MRD Block <a target=\"_blank\" href=\"https://goo.gl/maps/YVKVRLqeL2dv2JRa6\"> here</a>"
+                        ],
+                        "context_set": ""
+                },
+    {
+                        "tag": "BE_Block_location",
+                        "patterns": [
+                                "Give me location of BE Block",
+                                "How to reach BE Block",
+                                "location of BE Block?",
+                                "I want to go BE Block?",
+                              "Where is BE Building located?"
+                            
+                        ],
+                        "responses": [
+                                "BE Block is located behind open theater <a target=\"_blank\" href=\"https://goo.gl/maps/yuAzcqq7yH9zJZir5\"> here</a>"
+                        ],
+                        "context_set": ""
+                },
+    
+    
+     {
+                        "tag": "E_Block_location",
+                        "patterns": [
+                                "Give me location of E Block",
+                                "How to reach E Block",
+                                "location of E Block?",
+                                "I want to go E Block?"
+                            
+                        ],
+                        "responses": [
+                                "Near Tech Park. <a target=\"_blank\" href=\"https://goo.gl/maps/RrY6Dsp5CtqC6dTJ6\"> here</a>"
+                        ],
+                        "context_set": ""
+                },
+     {
+                        "tag": "G_Block_location",
+                        "patterns": [
+                                "Give me location of G Block",
+                                "How to reach G Block",
+                                "location of G Block?",
+                                "I want to go G Block?"
+                            
+                        ],
+                        "responses": [
+                                "Near Tech Park. <a target=\"_blank\" href=\"https://goo.gl/maps/CFGP1Br8FBwrf8nx6\"> here</a>"
+                        ],
+                        "context_set": ""
+                },
+     {
+                        "tag": "MBA_Block_location",
+                        "patterns": [
+                                "Give me location of MBA Block",
+                                "How to reach MBA Block",
+                                "location of MBA Block?",
+                                "I want to go MBA Block?"
+                            
+                        ],
+                        "responses": [
+                                "Go streight to the Parking Area,Back of the parking area there is MBA Block.near PES tech Park."
+                        ],
+                        "context_set": ""
+                },
+     {
+                        "tag": "GJ_Block_location",
+                        "patterns": [
+                                "Give me location of Golden Jubliee Block",
+                                "How to reach GJB Block",
+                                "location of GJB ?",
+                                "I want to go GJ Block?"
+                            
+                        ],
+                        "responses": [
+                                "Go streight to the main gate.New left side building is GJB <a target=\"_blank\" href=\"https://goo.gl/maps/W9PraiFKZQG4mv1a7\"> here</a>"
+                        ],
+                        "context_set": ""
+                },
+    
+     {
+                        "tag": "Gym_location",
+                        "patterns": [
+                                "Give me location of Gym",
+                                "How to reach Gym",
+                                "location of Gym?",
+                                "I want to go Gym?"
+                            
+                        ],
+                        "responses": [
+                                "It is near Parking Area.  <a target=\"_blank\" href=\"https://goo.gl/maps/mLHyMhcVLumjoKPA7\"> here</a>"
+                        ],
+                        "context_set": ""
+                },
+    
+          {
+                  "tag": "infrastructure",
+                  "patterns": [
+                          "how is college infrastructure",
+                          "infrastructure",
+                          "college infrastructure"
+                  ],
+                  "responses": [
+                          "PES university has Excellent Infrastructure. Campus is clean. Good IT Labs With Good Speed of Internet connection"
+                  ],
+                  "context_set": ""
+          },
+     {
+                  "tag": "faculty",
+                  "patterns": [
+                          "faculty of pes college",
+                          "faculty of mca",
+                          "faculty",
+                          "teachers of pes",
+                          "Professor of pes",
+                          "Professors of pes"
+                  ],
+                  "responses": [
+                          "You can find out about pes faculty <a target=\"_blank\" href=\"https://staff.pes.edu/\">here</a>"
+                  ],
+                  "context_set": ""
+          },
+    {
+                  "tag": "facilities",
+                  "patterns": [
+                          "What facilities college provide",
+                          "College facility",
+                          "What are college facilities",
+                          "facilities",
+                          "facilities provided"
+                  ],
+                  "responses": [
+                          "PES university provides fully AC Lab with internet connection, smart classroom, Auditorium, library,canteen"
+                  ],
+                  "context_set": ""
+          },
+            {
+                  "tag": "clubs",
+                  "patterns": [
+                          "what are the different clubs in college",
+                          "different clubs in college",
+                          "Are there any clubs in college",
+                          "Give me clubs details",
+                          "clubs available",
+                          "clubs",
+                          "how many clubs are there in college"
+                  ],
+                  "responses": [
+                          "There are various clubs in college you can see at  <a target=\"_blank\" href=\"https://clubs.pes.edu/\">here</a> "
+                  ],
+                  "context_set": ""
+          },
+    {
+                  "tag": "random",
+                  "patterns": [
+                          
+                          "I love you",
+                          "Will you marry me",
+                          "Do you love me"
+                  ],
+                  "responses": [
+                          "I am not program for this please ask appropriate query"
+                  ],
+                  "context_set": ""
+          },
+    {
+                  "tag": "swear",
+                  "patterns": [
+                          "fuck",
+                          "bitch",
+                          "shut up",
+                          "hell",
+                          "stupid",
+                          "idiot",
+                          "dumb ass",
+                          "asshole",
+                          "fucker"
+                  ],
+                  "responses": [
+                          "please use appropriate language",
+                          "Maintaining decency would be appreciated"
+                  ],
+                  "context_set": ""
+          },
+     {
+                  "tag": "vacation",
+                  "patterns": [
+                          "holidays",
+                          "when will semester starts",
+                          "when will semester end",
+                          "when is the holidays",
+                          "list of holidays",
+                          "about vacations",
+                          "about holidays",
+                          "When is vacation",
+                          "When is holidays",
+                          "how long will be the vacation"
+                  ],
+                  "responses": [
+                          "Please refer to academic calendar available in PESU app"
+                  ],
+                  "context_set": ""
+          },
+    
+     {
+                  "tag": "metro",
+                  "patterns":[
+                          "nearest metro station",
+                          "what is the nearest metro station",
+                          "which metro station is near",
+                          "closest metro station",
+                          "which metro station is closest",
+                          "nearby metro stations",
+                          "metro",
+                          "metro station nearby"
+                  ],
+                  "responses":[
+                          "Banashankari metro station"
+                  ]
+          },
+           {
+                  "tag": "task",
+                  "patterns": [
+                          "what can you do",
+                          "what are the thing you can do",
+                          "things you can do",
+                          "what can u do for me",
+                          "how u can help me",
+                          "why i should use you"
+                  ],
+                  "responses": [
+                          "I can answer to low-intermediate questions regarding college",
+                          "You can ask me questions regarding college, and i will try to answer them"
+                  ],
+                  "context_set": ""
+          },
+       {
+                  "tag":"ragging",
+                  "patterns":[
+                          "ragging",
+                          "is ragging practice active in college",
+                          "does college have any antiragging facility",
+                          "is there any ragging cases",
+                          "is ragging done here",
+                          "ragging juniors",
+                          "ragging history",
+                          "ragging incidents"
+                          
+                  ],
+                  "responses": [
+                          "We are Proud to tell you that our college provides ragging free environment, and we have strict rules against ragging" ]
+
+          },
+               {
+                  "tag": "vacation",
+                  "patterns": [
+                          "holidays",
+                          "when will semester starts",
+                          "when will semester end",
+                          "when is the holidays",
+                          "list of holidays",
+                          "about vacations",
+                          "about holidays",
+                          "When is vacation",
+                          "When is holidays",
+                          "how long will be the vacation"
+                  ],
+                  "responses": [
+                          "Please refer to academic calendar available in PESU app"
+                  ],
+                  "context_set": ""
+          },
+    
+     {
+                        "tag": "Courses",
+                        "patterns": [
+                                "What are the courses availble in PES University?",
+                                "Courses in  PES",
+                                " How many courses are available?",
+                                "tell me about the courses?"
+                    
+                        ],
+                        "responses": [
+                                "What courses you want?Undergraduate or Postgraduate."
+                        ],
+                        "context_set": ""
+                },
+     {
+                        "tag": "UG_Courses",
+                        "patterns": [
+                                "What are the UG courses availble in PES University?",
+                                "Bachalor Courses in  PES",
+                                " How many Undergraduate courses are available?",
+                                "tell me about the Undergraguate courses?"
+                    
+                        ],
+                        "responses": [
+                                "Bachelor of Computer Applications (BCA),Bachelor of Science (B.Sc) in Medical,Bachelor of Science (B.Sc) in Economics – Honors,Bachelor of Technology (B.Tech), LLB (Hons.),Bachelor of Arts,Bachelor of Design (B.Des),Bachelor of Architecture (B.Arch),Bachelor of Business Administration (BBA – Gen/Hons),Bachelor of Science (B.Sc) in Nursing.To know more <a target=\"_blank\" href=\"https://pes.edu/programs\">click here</a>"
+                        ],
+                        "context_set": ""
+                },
+         {
+                        "tag": "BCA",
+                        "patterns": [
+                                "Tell me about BCA?",
+                                "tell me about Bachalor of computer application",
+                                "what to know about BCA?",
+                                "how many years BCA takes ?",
+                            "I want to do BCA?",
+                            "want to know about Bachalor of computer application?"
+                    
+                        ],
+                        "responses": [
+                                "Bachelor of Computer Applications (BCA), THE CONTENT WILL BE UPDATED SOON.To know more <a target=\"_blank\" href=\"https://pes.edu/bca\">click here</a>"
+                        ],
+                        "context_set": ""
+                },
+      {
+                        "tag": "BBA",
+                        "patterns": [
+                                "Tell me about BBA?",
+                                "tell me about Bachelor of Business Administration (BBA – Gen/Hons)",
+                                "what to know about BBA?",
+                                "how many years BBA takes ?",
+                            "I want to do BCA?",
+                            "want to know about Bachelor of Business Administration (BBA – Gen/Hons)?"
+                    
+                        ],
+                        "responses": [
+                                "Bachelor of Business Administration (BBA – Gen/Hons),BBA 3 year and BBA (Hons) 4-year Program is one of the best undergraduate programs available nationally. BBA is a discipline of business studies that teaches us how to do business, comprehend people, manage people, handle difficult and critical client interactions, and communicate effectively.To know more <a target=\"_blank\" href=\"https://pes.edu/bba\">click here</a>"
+                        ],
+                        "context_set": ""
+                },
+    
+     {
+                        "tag": "B.Arch",
+                        "patterns": [
+                            "b arch",
+                            "B Arch",
+                                "Tell me about B.Arch?",
+                                "tell me about Bachelor of Architecture",
+                                "what to know about B Arch?",
+                                "how many years Bachelor of Architecture takes ?",
+                            "I want to do B.Arch?",
+                            "want to know about Bachelor of Architechture?"
+                    
+                        ],
+                        "responses": [
+                                "Duration: 5 Years,Affiliation: PES University,Admission Test: PESSAT / NATA.Situated in PES University’s rich and intense educational environment, the program emphasizes the interconnected relationship between architectural design, building technology, computation, history, theory and criticism of architecture and art.To know more <a target=\"_blank\" href=\"https://pes.edu/barch\">click here</a>"
+                        ],
+                        "context_set": ""
+                },
+     {
+                        "tag": "BSC",
+                        "patterns": [
+                                "Tell me about BSc nursing?",
+                                "tell me about Bachelor of Science in nursing",
+                                "what to know about Bsc?",
+                                "how many years Bsc takes ?",
+                            "I want to do Bsc nursing?",
+                            "want to know about Bachelor of Science in nursing?"
+                    
+                        ],
+                        "responses": [
+                                "Duration: 4 Years (8 Semesters),Affiliation: The State Government of Karnataka, University Grant Commission (UGC) and affiliated to Indian Nursing Council and Karnataka State Nursing Council,Admission Test: PESSAT..To know more <a target=\"_blank\" href=\"https://pes.edu/nursing\">click here</a>"
+                        ],
+                        "context_set": ""
+                },
+    
+    
+       {
+                        "tag": "PG_Courses",
+                        "patterns": [
+                                "What are the PG courses availble in PES University?",
+                                "Post Graduate Courses in  PES",
+                                " How many Post graduate courses are available?",
+                                "tell me about the PG courses?"
+                    
+                        ],
+                        "responses": [
+                                "Master of Technology (M.Tech),Master of Business Administration (MBA),Master of Computer Application (MCA),Master of Technology by Research,Master of Commerce (M.Com),To know more <a target=\"_blank\" href=\"https://pes.edu/programs\">click here</a>"
+                        ],
+                        "context_set": ""
+                },
+    {
+                        "tag": "Admission",
+                        "patterns": [
+                                "What is the admission process in PES University?",
+                                "Tell me about admission",
+                                " How to take admission?",
+                                "tell me about admission process?"
+                    
+                        ],
+                        "responses": [
+                                "PESSAT 2022 registrations are open only for select courses.To know more <a target=\"_blank\" href=\"https://pessat.com\">click here</a>"
+                        ],
+                        "context_set": ""
+                },
+    
+        {"tag": "events",
+         "patterns": ["In what all events students can engage themselves at PES", "what all events happens here at PES", "In which all events students can engage themselves at PES" , "tell me name of events which you to happen here" ],
+         "responses": ["Here in PES we use to organize many events every year like sports events,cultural events ,we use to conduct Science fest and hackathons every year so that tech lovers can show there talent and we also have other events conducted by different different clubs and societies to spread awareness among the youth and the society "],
+         "context_set": ""
+        },
+        {"tag" : "b.tech_m.tech",
+         "patterns" : ["b tech","m tech","what all will students learn in b.tech computer science?","tell me about m.tech?","m.tech","tell me about m.tech","I want to know about b tech","what all topics are been taught in computer science", "what subjects does computer science offer","tell me about b.tech?","I want to know about m.tech"],
+         "responses": [" students will learn about Artificial Intelligence, c programming, c + + programming, java programming,python programming and various other topics which will help our students to become a good computer science engineer.Duration: 4 Years.Affiliation: PES University.Admission Test: PESSAT / KCET / JEE Main"],
+         "context_set": ""
+        },
+        {"tag" : "MCA",
+         "patterns" : ["what is the importance of ece in MCA", "what is MCA", "why should my student opt for MCA", "what is the future of MCA","tell me about MCA","I want to know about MCA course"],
+         "responses": ["Duration: 2 Years, Affiliation: PES University,Admission Test: PESSAT / PGCET .To know more <a target=\"_blank\" href=\"https://pes.edu/mca\">click here</a>"],
+         "context_set": ""
+        },
+    {"tag" : "MBA",
+         "patterns" : ["mba","what is the importance of ece in MBA", "what is MBA", "why should my student opt for MBA", "what is the future of MBA","tell me about MBA","I want to know about MBA course"],
+         "responses": ["Duration: 2 Years, Affiliation: PES University,Admission Test: PESSAT / PGCET .To know more <a target=\"_blank\" href=\"https://pes.edu/mba\">click here</a>"],
+         "context_set": ""
+        },
+    {"tag" : "Ph.D.",
+         "patterns" : ["phd","research","what are the PhD courses available?", "what is phD", "Tell me about research ", "what is phD research?","tell me about phD Research","I want to know about research course"],
+         "responses": ["Ph.D. and M.Tech. (Research) in – Computer Science & Engineering, Electrical Engineering, Electronics and Communication Engg., Mechanical Engg., and Biotechnology.Ph.D. in – Commerce & Management, Science (Maths, Physics & Chemistry), and Computer Applications.To know more <a target=\"_blank\" href=\"https://pes.edu/phd\">click here</a>"],
+         "context_set": ""
+        },
+        
+        {"tag" : "elective",
+         "patterns" : ["Is it compulsory to take a subject in elective", "Name open elective subjects", "how will open elective help a student in future"],
+         "responses" : ["Opting for a open elective subject during the course is compulsory here in PES. The main purpose for making a student to learn his or her favorite subject as a open elective is to make a student to learn some more new skills and different skills other then his or her main course subject. Here at PES we believe that having a extra skill is always beneficial for a student. A student can select any subject related to sports, engineering, law, entrepreneurship, etc. It does not matter that a student has his or her major subject related to it or not and if he or she knows anything about this subject or not. This is a three years course where a student will get a deep knowledge about his or her choosen subject and he or she will also get a minor degree which denotes that the student has sucessfully completed his course related to open elective and he or she has a deep knowledge about that subject. "]
+
+        }
+        
+        
+        
+
+   ]
+}
